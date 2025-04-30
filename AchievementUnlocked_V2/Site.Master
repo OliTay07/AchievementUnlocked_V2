@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AchievementUnlocked_V2.Site"%>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Achievement Unlocked</title>
+   <link rel="stylesheet" type="text/css" href="Styles/Styles.css" />
+    
+    <style>
+        body{
+            font-family: Calibri;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server"> 
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+   
+
+    <form id="form1" runat="server">
+       
+         <!-- HEADER -->
+        <header>
+
+            
+             <div class="logo-nav-container">
+            <div class="logo">
+                
+            <!-- When user clicks the Achievement Unlocked logo it will send them back to the Home page -->
+                <a href="/Pages/Home.aspx" target="_blank" style="color: white; text-decoration: none;">
+                <!-- Achievement unlocked logo -->
+                    <img src="/Images/AchievementUnlocked.png" />
+                </a>
+            </div>
+
+            <nav>
+                <ul>
+                    <!-- Nav bar page links -->
+                    <li><a href="Home.aspx">Home</a></li>
+                    <li><a href="Library.aspx">Library</a></li>
+                    <li><a href="Wishlist.aspx">Wishlist</a></li>
+                    <li><a href="Gallery.aspx">Gallery</a></li>
+
+                </ul>
+            </nav>
+                  </div>
+           
+        </header>
+
+         <!-- PAGE CONTENT -->
+        
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        
+        <!-- FOOTER -->'
+        
+  <div class="footer" style="background: linear-gradient(to right, #FFB6C1, #FFCCE5); color: white;">
+    <p style="text-align:center">&copy; <%= DateTime.Now.Year %> Achievement Unlocked. All rights reserved.</p>
+</div>
+
+    </form>
+</body>
+
+  
+</html>

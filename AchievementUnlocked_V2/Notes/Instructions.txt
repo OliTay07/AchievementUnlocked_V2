@@ -1,0 +1,48 @@
+﻿How I created Achievement Unlocked - Instructions & Steps:
+
+Before development:
+*****************************
+- Think about the concept of the website
+- Design and create a logo
+- Create page designs using Miro
+- Set up and obtain my Steam API Key
+
+Beginning development: 
+**********************
+1. Add a master page - Site.Master
+2. Create a 'Pages' folder, inside add all the pages
+   - Home.aspx
+   - Library.aspx
+   - Reviews.aspx
+   - Wishlist.aspx
+
+3. Create a 'Styles' folder, inside add a CSS file
+   - Styles.css
+
+4. Create an 'Images' folder, inside add all the images that will be used in the site
+   - The logo: AchievementUnlocked.png 
+
+5. Design the Site.Master page 
+   - Add the logo
+   - Add the page links
+   - Add content to the footer
+   - Link the style sheet to the master page
+
+6. Use CSS to design the master page 
+   - Body
+   - Header
+   - Logo
+   - Nav
+   - Footer
+
+7. Manage NuGet packages
+   - Install Newtonsoft.Json: for JSON parsing
+   - Install System.Net.Http: for HTTP requests 
+
+8. Develop the Home page
+   - About me section: 
+     - Implement my Steam profile image
+     - Implement box with text about me inside and style it
+   - Implement Achievement Unlocked logo
+     - Implement box with text about me inside and style it
+   
